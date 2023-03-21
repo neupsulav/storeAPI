@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const connection = (connectionString) => {
+const connection = async (connectionString) => {
   return mongoose
     .connect(connectionString)
     .then(() => {
